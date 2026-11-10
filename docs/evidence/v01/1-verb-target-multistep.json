@@ -1,0 +1,472 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T05:42:59Z",
+  "trials" : [
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "pet x=0.25, ball x=0.55"
+        ],
+        "heldBall" : false,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "look ball",
+          "push ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 6.9291385420000005,
+        "inputTokens" : 575,
+        "instructionTokens" : 299,
+        "outputTokens" : 87,
+        "plan" : {
+          "intent" : "pet x=0.25, ball x=0.55",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "push"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.25; ball x=0.55; box x=0.80; home x=0.12.\nHolding ball: false.\nRecent actual events: \nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 68,
+        "rawOutput" : "{\"intent\": \"pet x=0.25, ball x=0.55\", \"steps\": [{\"verb\": \"look\", \"target\": \"ball\"}, {\"target\": \"ball\", \"verb\": \"push\"}]}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "fresh",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "pet x=0.25"
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed",
+          "look pet"
+        ],
+        "revision" : 1
+      },
+      "index" : 1,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 3.442104,
+        "inputTokens" : 574,
+        "instructionTokens" : 299,
+        "outputTokens" : 57,
+        "plan" : {
+          "intent" : "pet x=0.25",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "look"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.25; ball x=absent; box x=0.80; home x=0.12.\nHolding ball: false.\nRecent actual events: ball removed\nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 67,
+        "rawOutput" : "{\"intent\": \"pet x=0.25\", \"steps\": [{\"target\": \"pet\", \"verb\": \"look\"}]}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "ball_removed",
+      "snapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球",
+          "抱住球后放回箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 4.7830135,
+        "inputTokens" : 579,
+        "instructionTokens" : 299,
+        "outputTokens" : 73,
+        "plan" : {
+          "intent" : "抱住球后放回箱子",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "drop"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.55; ball x=0.55; box x=0.80; home x=0.12.\nHolding ball: true.\nRecent actual events: carry ball\nPreviously completed activities: 捡起球\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 72,
+        "rawOutput" : "{\"steps\": [{\"verb\": \"drop\", \"target\": \"box\"}, {\"target\": \"box\", \"verb\": \"approach\"}], \"intent\": \"抱住球后放回箱子\"}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "holding_ball",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子",
+          "宠物希望去看球"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted",
+          "look ball",
+          "approach ball"
+        ],
+        "revision" : 1
+      },
+      "index" : 3,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 3.041816417,
+        "inputTokens" : 586,
+        "instructionTokens" : 299,
+        "outputTokens" : 45,
+        "plan" : {
+          "intent" : "宠物希望去看球",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.80; ball x=0.80; box x=0.80; home x=0.12.\nHolding ball: false.\nRecent actual events: carry ball; drop box; petted\nPreviously completed activities: 把球送到箱子\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 79,
+        "rawOutput" : "{\"steps\": [{\"target\": \"ball\", \"verb\": \"look\"}, {\"verb\": \"approach\", \"target\": \"ball\"}], \"intent\": \"宠物希望去看球\"}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "continuity",
+      "snapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "pet x=0.25 look ball"
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "look ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 4,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 3.097969708,
+        "inputTokens" : 575,
+        "instructionTokens" : 299,
+        "outputTokens" : 51,
+        "plan" : {
+          "intent" : "pet x=0.25 look ball",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.25; ball x=0.55; box x=0.80; home x=0.12.\nHolding ball: false.\nRecent actual events: \nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 68,
+        "rawOutput" : "{\"intent\": \"pet x=0.25 look ball\", \"steps\": [{\"verb\": \"look\", \"target\": \"ball\"}]}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "fresh",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "pet x=0.25"
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed",
+          "look pet",
+          "hop pet"
+        ],
+        "revision" : 1
+      },
+      "index" : 5,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 3.50545975,
+        "inputTokens" : 574,
+        "instructionTokens" : 299,
+        "outputTokens" : 71,
+        "plan" : {
+          "intent" : "pet x=0.25",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "look"
+            },
+            {
+              "target" : "pet",
+              "verb" : "hop"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.25; ball x=absent; box x=0.80; home x=0.12.\nHolding ball: false.\nRecent actual events: ball removed\nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 67,
+        "rawOutput" : "{\"steps\": [{\"verb\": \"look\", \"target\": \"pet\"}, {\"verb\": \"hop\", \"target\": \"pet\"}], \"intent\": \"pet x=0.25\"}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "ball_removed",
+      "snapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(0)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 6,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 3.418680542,
+        "inputTokens" : 579,
+        "instructionTokens" : 299,
+        "outputTokens" : 53,
+        "plan" : {
+          "intent" : "希望把球放到箱子",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "drop"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            },
+            {
+              "target" : "box",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.55; ball x=0.55; box x=0.80; home x=0.12.\nHolding ball: true.\nRecent actual events: carry ball\nPreviously completed activities: 捡起球\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 72,
+        "rawOutput" : "{\"intent\": \"希望把球放到箱子\", \"steps\": [{\"target\": \"ball\", \"verb\": \"drop\"}, {\"verb\": \"approach\", \"target\": \"box\"}, {\"target\": \"box\", \"verb\": \"drop\"}]}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "holding_ball",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(2)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted"
+        ],
+        "revision" : 1
+      },
+      "index" : 7,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 4.523946292,
+        "inputTokens" : 586,
+        "instructionTokens" : 299,
+        "outputTokens" : 99,
+        "plan" : {
+          "intent" : "狗狗希望靠近球",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            },
+            {
+              "target" : "ball",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "Current world: pet x=0.80; ball x=0.80; box x=0.80; home x=0.12.\nHolding ball: false.\nRecent actual events: carry ball; drop box; petted\nPreviously completed activities: 把球送到箱子\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 79,
+        "rawOutput" : "{\"intent\": \"狗狗希望靠近球\", \"steps\": [{\"verb\": \"carry\", \"target\": \"ball\"}, {\"target\": \"ball\", \"verb\": \"approach\"}, {\"verb\": \"drop\", \"target\": \"ball\"}]}",
+        "schemaTokens" : 209
+      },
+      "scenario" : "continuity",
+      "snapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted"
+        ],
+        "revision" : 1
+      }
+    }
+  ]
+}

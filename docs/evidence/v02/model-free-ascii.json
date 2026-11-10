@@ -1,0 +1,1530 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T14:01:45Z",
+  "trials" : [
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro"
+        ],
+        "heldBall" : false,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "dig box",
+          "spin pet",
+          "approach ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 6.374269167,
+        "expressionAdjustedFields" : [
+          "thought"
+        ],
+        "expressionFallbackFields" : [
+          "doodle"
+        ],
+        "inputTokens" : 1544,
+        "instructionTokens" : 774,
+        "outputTokens" : 79,
+        "plan" : {
+          "expression" : {
+            "doodle" : " \/ \\__\n(    @\\___\n \/         O",
+            "emoji" : "🐾✨",
+            "thought" : "Tiny whirlwind: let the ball escape thro"
+          },
+          "intent" : "Tiny whirlwind: let the ball escape thro",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "dig"
+            },
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 25, box 80.\nRecent actual events: \nRecent completed ideas (avoid repeating): \nInspiration for this activity: make a tiny performance for the user.\nStart a new 2-3 action idea.\nAvailable actions: digInBox, lookAtBox, pushBall, spinAround, pickUpBall, approachBall, lookAtUser, hop, approachBox, goHome, stretch, rest, lookAtBall\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: dig box\nRecent completed ideas (avoid repeating): 规划校验\nInspiration for this activity: make a tiny performance for the user.\nAlready selected: digInBox. Continue the idea: Tiny whirlwind: let the ball escape thro. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pushBall, lookAtBall, approachBall, pickUpBall, spinAround, stretch, goHome, rest, lookAtBox, hop, lookAtUser, approachBox, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: dig box; spin pet\nRecent completed ideas (avoid repeating): 规划校验; 规划校验\nInspiration for this activity: make a tiny performance for the user.\nAlready selected: digInBox, spinAround. Continue the idea: Tiny whirlwind: let the ball escape thro. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtUser, rest, lookAtBox, approachBox, lookAtBall, stretch, hop, pickUpBall, approachBall, goHome, pushBall, stop",
+        "promptTokens" : 283,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🐾✨\", \"thought\": \"Tiny whirlwind: let the ball escape through the cardboard weave 🌀🚀\", \"doodle\": \"□ ◇ ▮\", \"action\": \"digInBox\"}\n\nSTEP 2\n{\"action\": \"spinAround\"}\n\nSTEP 3\n{\"action\": \"approachBall\"}",
+        "schemaTokens" : 490
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "dig box",
+          "spin pet",
+          "approach ball",
+          "push ball",
+          "bow pet",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 1,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 5.520085458,
+        "expressionAdjustedFields" : [
+          "thought",
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1554,
+        "instructionTokens" : 774,
+        "outputTokens" : 89,
+        "plan" : {
+          "expression" : {
+            "doodle" : ".-_.-",
+            "emoji" : "🐾🐉✨",
+            "thought" : "Bounce the ball like a dragon wants to s"
+          },
+          "intent" : "Bounce the ball like a dragon wants to s",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "push"
+            },
+            {
+              "target" : "pet",
+              "verb" : "bow"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 55, box 80.\nRecent actual events: dig box; spin pet; approach ball\nRecent completed ideas (avoid repeating): Tiny whirlwind: let the ball escape thro\nInspiration for this activity: pretend an everyday toy is surprising.\nStart a new 2-3 action idea.\nAvailable actions: pushBall, approachBox, lookAtUser, rest, stretch, lookAtBall, pickUpBall, hop, goHome, lookAtBox\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 66, box 80.\nRecent actual events: dig box; spin pet; approach ball; push ball\nRecent completed ideas (avoid repeating): Tiny whirlwind: let the ball escape thro; 规划校验\nInspiration for this activity: pretend an everyday toy is surprising.\nAlready selected: pushBall. Continue the idea: Bounce the ball like a dragon wants to s. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtBall, stretch, goHome, lookAtBox, pickUpBall, rest, approachBox, lookAtUser, hop, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 66, box 80.\nRecent actual events: dig box; spin pet; approach ball; push ball; bow pet\nRecent completed ideas (avoid repeating): Tiny whirlwind: let the ball escape thro; 规划校验; 规划校验\nInspiration for this activity: pretend an everyday toy is surprising.\nAlready selected: pushBall, stretch. Continue the idea: Bounce the ball like a dragon wants to s. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: hop, approachBox, rest, lookAtUser, pickUpBall, lookAtBall, goHome, lookAtBox, stop",
+        "promptTokens" : 329,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🐾🐉✨\", \"action\": \"pushBall\", \"doodle\": \".-°_°.-\", \"thought\": \"Bounce the ball like a dragon wants to sip moonlight 🌙✨\"}\n\nSTEP 2\n{\"action\": \"stretch\"}\n\nSTEP 3\n{\"action\": \"approachBox\"}",
+        "schemaTokens" : 454
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro"
+        ],
+        "heldBall" : false,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "dig box",
+          "spin pet",
+          "approach ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "spin pet",
+          "approach ball",
+          "push ball",
+          "bow pet",
+          "approach box",
+          "look box",
+          "dig box",
+          "spin pet"
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 6.043467333,
+        "expressionAdjustedFields" : [
+          "thought",
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1585,
+        "instructionTokens" : 774,
+        "outputTokens" : 101,
+        "plan" : {
+          "expression" : {
+            "doodle" : " |  ",
+            "emoji" : "🐕✨🌀",
+            "thought" : "Wrap the mat like a secret to outsmart t"
+          },
+          "intent" : "Wrap the mat like a secret to outsmart t",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "look"
+            },
+            {
+              "target" : "box",
+              "verb" : "dig"
+            },
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: dig box; spin pet; approach ball; push ball; bow pet; approach box\nRecent completed ideas (avoid repeating): Tiny whirlwind: let the ball escape thro; Bounce the ball like a dragon wants to s\nInspiration for this activity: alternate curiosity with a cozy pause.\nStart a new 2-3 action idea.\nAvailable actions: lookAtBox, hop, goHome, pickUpBall, lookAtBall, lookAtUser, rest\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: dig box; spin pet; approach ball; push ball; bow pet; approach box; look box\nRecent completed ideas (avoid repeating): Tiny whirlwind: let the ball escape thro; Bounce the ball like a dragon wants to s; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: lookAtBox. Continue the idea: Wrap the mat like a secret to outsmart t. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: hop, rest, lookAtUser, digInBox, goHome, pickUpBall, lookAtBall, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: dig box; spin pet; approach ball; push ball; bow pet; approach box; look box; dig box\nRecent completed ideas (avoid repeating): Bounce the ball like a dragon wants to s; 规划校验; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: lookAtBox, digInBox. Continue the idea: Wrap the mat like a secret to outsmart t. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: rest, lookAtBall, goHome, lookAtUser, pickUpBall, hop, spinAround, stop",
+        "promptTokens" : 383,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🐕✨🌀\", \"action\": \"lookAtBox\", \"doodle\": \"☐ | ↘︎ ↘︎\", \"thought\": \"Wrap the mat like a secret to outsmart the ball 🐶🌀\"}\n\nSTEP 2\n{\"action\": \"digInBox\"}\n\nSTEP 3\n{\"action\": \"spinAround\"}",
+        "schemaTokens" : 431
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "dig box",
+          "spin pet",
+          "approach ball",
+          "push ball",
+          "bow pet",
+          "approach box"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil"
+        ],
+        "heldBall" : false,
+        "petX" : 0.7000000000000001,
+        "recentEvents" : [
+          "bow pet",
+          "approach box",
+          "look box",
+          "dig box",
+          "spin pet",
+          "look ball",
+          "hop pet",
+          "approach ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 3,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 6.159075375,
+        "expressionAdjustedFields" : [
+          "thought"
+        ],
+        "expressionFallbackFields" : [
+          "doodle"
+        ],
+        "inputTokens" : 1605,
+        "instructionTokens" : 774,
+        "outputTokens" : 93,
+        "plan" : {
+          "expression" : {
+            "doodle" : " \/ \\__\n(    @\\___\n \/         O",
+            "emoji" : "🌬️🐶✨",
+            "thought" : "Tiny storm whispers: crack the box’s sil"
+          },
+          "intent" : "Tiny storm whispers: crack the box’s sil",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "pet",
+              "verb" : "hop"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: spin pet; approach ball; push ball; bow pet; approach box; look box; dig box; spin pet\nRecent completed ideas (avoid repeating): Tiny whirlwind: let the ball escape thro; Bounce the ball like a dragon wants to s; Wrap the mat like a secret to outsmart t\nInspiration for this activity: make a tiny performance for the user.\nStart a new 2-3 action idea.\nAvailable actions: lookAtUser, hop, pickUpBall, rest, lookAtBall, goHome, approachBall\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: approach ball; push ball; bow pet; approach box; look box; dig box; spin pet; look ball\nRecent completed ideas (avoid repeating): Bounce the ball like a dragon wants to s; Wrap the mat like a secret to outsmart t; 规划校验\nInspiration for this activity: make a tiny performance for the user.\nAlready selected: lookAtBall. Continue the idea: Tiny storm whispers: crack the box’s sil. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: goHome, pushBall, hop, lookAtUser, rest, pickUpBall, approachBall, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 80, box 80.\nRecent actual events: push ball; bow pet; approach box; look box; dig box; spin pet; look ball; hop pet\nRecent completed ideas (avoid repeating): Wrap the mat like a secret to outsmart t; 规划校验; 规划校验\nInspiration for this activity: make a tiny performance for the user.\nAlready selected: lookAtBall, hop. Continue the idea: Tiny storm whispers: crack the box’s sil. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: approachBall, rest, stretch, pickUpBall, goHome, pushBall, lookAtUser, stop",
+        "promptTokens" : 407,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🌬️🐶✨\", \"action\": \"lookAtBall\", \"thought\": \"Tiny storm whispers: crack the box’s silence—a shadow dares to dance 🌬️🐾\", \"doodle\": \"≡│─≡\"}\n\nSTEP 2\n{\"action\": \"hop\"}\n\nSTEP 3\n{\"action\": \"approachBall\"}",
+        "schemaTokens" : 427
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "spin pet",
+          "approach ball",
+          "push ball",
+          "bow pet",
+          "approach box",
+          "look box",
+          "dig box",
+          "spin pet"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "spin pet",
+          "look ball",
+          "hop pet",
+          "approach ball",
+          "moved box",
+          "bow pet",
+          "look box",
+          "dig box"
+        ],
+        "revision" : 1
+      },
+      "index" : 4,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 5.988097042,
+        "expressionAdjustedFields" : [
+          "thought",
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1596,
+        "instructionTokens" : 774,
+        "outputTokens" : 89,
+        "plan" : {
+          "expression" : {
+            "doodle" : ".-_*",
+            "emoji" : "🐾✨🌀",
+            "thought" : "Tiny silk threads hum: weave box whisper"
+          },
+          "intent" : "Tiny silk threads hum: weave box whisper",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "bow"
+            },
+            {
+              "target" : "box",
+              "verb" : "look"
+            },
+            {
+              "target" : "box",
+              "verb" : "dig"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 70, box 35.\nRecent actual events: approach box; look box; dig box; spin pet; look ball; hop pet; approach ball; moved box\nRecent completed ideas (avoid repeating): Bounce the ball like a dragon wants to s; Wrap the mat like a secret to outsmart t; Tiny storm whispers: crack the box’s sil\nInspiration for this activity: try a playful rhythm.\nStart a new 2-3 action idea.\nAvailable actions: stretch, pickUpBall, pushBall, approachBox, goHome, rest, lookAtUser\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 70, box 35.\nRecent actual events: look box; dig box; spin pet; look ball; hop pet; approach ball; moved box; bow pet\nRecent completed ideas (avoid repeating): Wrap the mat like a secret to outsmart t; Tiny storm whispers: crack the box’s sil; 规划校验\nInspiration for this activity: try a playful rhythm.\nAlready selected: stretch. Continue the idea: Tiny silk threads hum: weave box whisper. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: rest, lookAtUser, approachBox, goHome, pushBall, lookAtBox, pickUpBall, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 70, box 35.\nRecent actual events: dig box; spin pet; look ball; hop pet; approach ball; moved box; bow pet; look box\nRecent completed ideas (avoid repeating): Tiny storm whispers: crack the box’s sil; 规划校验; 规划校验\nInspiration for this activity: try a playful rhythm.\nAlready selected: stretch, lookAtBox. Continue the idea: Tiny silk threads hum: weave box whisper. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pushBall, lookAtUser, digInBox, pickUpBall, approachBox, goHome, rest, stop",
+        "promptTokens" : 395,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🐾✨🌀\", \"action\": \"stretch\", \"doodle\": \".-_*•\", \"thought\": \"Tiny silk threads hum: weave box whispers into dance 🦊🌙\"}\n\nSTEP 2\n{\"action\": \"lookAtBox\"}\n\nSTEP 3\n{\"action\": \"digInBox\"}",
+        "schemaTokens" : 430
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil"
+        ],
+        "heldBall" : false,
+        "petX" : 0.7000000000000001,
+        "recentEvents" : [
+          "approach box",
+          "look box",
+          "dig box",
+          "spin pet",
+          "look ball",
+          "hop pet",
+          "approach ball",
+          "moved box"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.8500000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat"
+        ],
+        "heldBall" : false,
+        "petX" : 0.81,
+        "recentEvents" : [
+          "approach ball",
+          "moved box",
+          "bow pet",
+          "look box",
+          "dig box",
+          "spin pet",
+          "approach box",
+          "push ball"
+        ],
+        "revision" : 1
+      },
+      "index" : 5,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 5.792874833,
+        "expressionAdjustedFields" : [
+          "thought"
+        ],
+        "expressionFallbackFields" : [
+          "doodle"
+        ],
+        "inputTokens" : 1598,
+        "instructionTokens" : 774,
+        "outputTokens" : 89,
+        "plan" : {
+          "expression" : {
+            "doodle" : " \/ \\__\n(    @\\___\n \/         O",
+            "emoji" : "🦴✨🌀",
+            "thought" : "Tiny bamboo whispers: weave a secret pat"
+          },
+          "intent" : "Tiny bamboo whispers: weave a secret pat",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            },
+            {
+              "target" : "ball",
+              "verb" : "push"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: spin pet; look ball; hop pet; approach ball; moved box; bow pet; look box; dig box\nRecent completed ideas (avoid repeating): Wrap the mat like a secret to outsmart t; Tiny storm whispers: crack the box’s sil; Tiny silk threads hum: weave box whisper\nInspiration for this activity: alternate curiosity with a cozy pause.\nStart a new 2-3 action idea.\nAvailable actions: pickUpBall, goHome, rest, spinAround, pushBall, approachBox, lookAtUser\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: look ball; hop pet; approach ball; moved box; bow pet; look box; dig box; spin pet\nRecent completed ideas (avoid repeating): Tiny storm whispers: crack the box’s sil; Tiny silk threads hum: weave box whisper; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: spinAround. Continue the idea: Tiny bamboo whispers: weave a secret pat. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pickUpBall, approachBox, goHome, rest, lookAtUser, pushBall, lookAtBall, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: hop pet; approach ball; moved box; bow pet; look box; dig box; spin pet; approach box\nRecent completed ideas (avoid repeating): Tiny silk threads hum: weave box whisper; 规划校验; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: spinAround, approachBox. Continue the idea: Tiny bamboo whispers: weave a secret pat. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: rest, hop, goHome, lookAtUser, lookAtBall, pickUpBall, pushBall, stop",
+        "promptTokens" : 397,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🦴✨🌀\", \"action\": \"spinAround\", \"doodle\": \"│🐾│\", \"thought\": \"Tiny bamboo whispers: weave a secret path through the cardboard maze ✨🌀\"}\n\nSTEP 2\n{\"action\": \"approachBox\"}\n\nSTEP 3\n{\"action\": \"pushBall\"}",
+        "schemaTokens" : 430
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "spin pet",
+          "look ball",
+          "hop pet",
+          "approach ball",
+          "moved box",
+          "bow pet",
+          "look box",
+          "dig box"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.8500000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8500000000000001,
+        "recentEvents" : [
+          "look box",
+          "dig box",
+          "spin pet",
+          "approach box",
+          "push ball",
+          "approach ball",
+          "look ball",
+          "hop pet"
+        ],
+        "revision" : 1
+      },
+      "index" : 6,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 5.953897292,
+        "expressionAdjustedFields" : [
+          "thought"
+        ],
+        "expressionFallbackFields" : [
+          "doodle"
+        ],
+        "inputTokens" : 1596,
+        "instructionTokens" : 774,
+        "outputTokens" : 95,
+        "plan" : {
+          "expression" : {
+            "doodle" : " \/ \\__\n(    @\\___\n \/         O",
+            "emoji" : "🐕✨📡",
+            "thought" : "Gentle ripple: listen for the box's whis"
+          },
+          "intent" : "Gentle ripple: listen for the box's whis",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            },
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "pet",
+              "verb" : "hop"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 81, box 35.\nRecent actual events: approach ball; moved box; bow pet; look box; dig box; spin pet; approach box; push ball\nRecent completed ideas (avoid repeating): Tiny storm whispers: crack the box’s sil; Tiny silk threads hum: weave box whisper; Tiny bamboo whispers: weave a secret pat\nInspiration for this activity: pretend an everyday toy is surprising.\nStart a new 2-3 action idea.\nAvailable actions: approachBall, hop, pickUpBall, lookAtUser, rest, lookAtBall, goHome\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 85, box 35.\nRecent actual events: moved box; bow pet; look box; dig box; spin pet; approach box; push ball; approach ball\nRecent completed ideas (avoid repeating): Tiny silk threads hum: weave box whisper; Tiny bamboo whispers: weave a secret pat; 规划校验\nInspiration for this activity: pretend an everyday toy is surprising.\nAlready selected: approachBall. Continue the idea: Gentle ripple: listen for the box's whis. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtBall, hop, pickUpBall, goHome, stretch, lookAtUser, rest, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 85, box 35.\nRecent actual events: bow pet; look box; dig box; spin pet; approach box; push ball; approach ball; look ball\nRecent completed ideas (avoid repeating): Tiny bamboo whispers: weave a secret pat; 规划校验; 规划校验\nInspiration for this activity: pretend an everyday toy is surprising.\nAlready selected: approachBall, lookAtBall. Continue the idea: Gentle ripple: listen for the box's whis. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: rest, goHome, stretch, lookAtBox, lookAtUser, hop, pickUpBall, stop",
+        "promptTokens" : 398,
+        "rawOutput" : "STEP 1\n{\"action\": \"approachBall\", \"thought\": \"Gentle ripple: listen for the box's whispered vault 🐶🤫\", \"emoji\": \"🐕✨📡\", \"doodle\": \"│╭🐾╮│\"}\n\nSTEP 2\n{\"action\": \"lookAtBall\"}\n\nSTEP 3\n{\"action\": \"hop\"}",
+        "schemaTokens" : 427
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.8500000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat"
+        ],
+        "heldBall" : false,
+        "petX" : 0.81,
+        "recentEvents" : [
+          "approach ball",
+          "moved box",
+          "bow pet",
+          "look box",
+          "dig box",
+          "spin pet",
+          "approach box",
+          "push ball"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.8500000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, "
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "approach box",
+          "push ball",
+          "approach ball",
+          "look ball",
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet"
+        ],
+        "revision" : 1
+      },
+      "index" : 7,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 7.063200167,
+        "expressionAdjustedFields" : [
+          "thought"
+        ],
+        "expressionFallbackFields" : [
+          "doodle"
+        ],
+        "inputTokens" : 1601,
+        "instructionTokens" : 774,
+        "outputTokens" : 111,
+        "plan" : {
+          "expression" : {
+            "doodle" : " \/ \\__\n(    @\\___\n \/         O",
+            "emoji" : "🦴✨🎶",
+            "thought" : "Tiny whispers: if I nudge with the mat, "
+          },
+          "intent" : "Tiny whispers: if I nudge with the mat, ",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "dig"
+            },
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "pet",
+              "verb" : "bow"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 85, box 35.\nRecent actual events: look box; dig box; spin pet; approach box; push ball; approach ball; look ball; hop pet\nRecent completed ideas (avoid repeating): Tiny silk threads hum: weave box whisper; Tiny bamboo whispers: weave a secret pat; Gentle ripple: listen for the box's whis\nInspiration for this activity: celebrate a very small discovery.\nStart a new 2-3 action idea.\nAvailable actions: rest, lookAtBox, lookAtUser, pickUpBall, goHome, stretch, digInBox\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: dig box; spin pet; approach box; push ball; approach ball; look ball; hop pet; dig box\nRecent completed ideas (avoid repeating): Tiny bamboo whispers: weave a secret pat; Gentle ripple: listen for the box's whis; 规划校验\nInspiration for this activity: celebrate a very small discovery.\nAlready selected: digInBox. Continue the idea: Tiny whispers: if I nudge with the mat, . The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pickUpBall, rest, lookAtBox, stretch, lookAtUser, goHome, spinAround, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: spin pet; approach box; push ball; approach ball; look ball; hop pet; dig box; spin pet\nRecent completed ideas (avoid repeating): Gentle ripple: listen for the box's whis; 规划校验; 规划校验\nInspiration for this activity: celebrate a very small discovery.\nAlready selected: digInBox, spinAround. Continue the idea: Tiny whispers: if I nudge with the mat, . The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtBox, rest, lookAtUser, stretch, goHome, pickUpBall, approachBox, stop",
+        "promptTokens" : 400,
+        "rawOutput" : "STEP 1\n{\"doodle\": \"┌───┐\\n│🐾│\\n└───┘\", \"emoji\": \"🦴✨🎶\", \"action\": \"digInBox\", \"thought\": \"Tiny whispers: if I nudge with the mat, the box will giggle—tiny ripples in silk dreams 🌙✨\"}\n\nSTEP 2\n{\"action\": \"spinAround\"}\n\nSTEP 3\n{\"action\": \"stretch\"}",
+        "schemaTokens" : 430
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.8500000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8500000000000001,
+        "recentEvents" : [
+          "look box",
+          "dig box",
+          "spin pet",
+          "approach box",
+          "push ball",
+          "approach ball",
+          "look ball",
+          "hop pet"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "ball removed",
+          "approach box",
+          "look box",
+          "rest home"
+        ],
+        "revision" : 2
+      },
+      "index" : 8,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 5.852884208,
+        "expressionAdjustedFields" : [
+          "thought",
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1570,
+        "instructionTokens" : 774,
+        "outputTokens" : 93,
+        "plan" : {
+          "expression" : {
+            "doodle" : " . . ",
+            "emoji" : "🐶✨🌀",
+            "thought" : "Tiny fox dreams: whisper under the box’s"
+          },
+          "intent" : "Tiny fox dreams: whisper under the box’s",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "approach"
+            },
+            {
+              "target" : "box",
+              "verb" : "look"
+            },
+            {
+              "target" : "home",
+              "verb" : "rest"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: push ball; approach ball; look ball; hop pet; dig box; spin pet; bow pet; ball removed\nRecent completed ideas (avoid repeating): Tiny bamboo whispers: weave a secret pat; Gentle ripple: listen for the box's whis; Tiny whispers: if I nudge with the mat, \nInspiration for this activity: alternate curiosity with a cozy pause.\nStart a new 2-3 action idea.\nAvailable actions: rest, lookAtUser, approachBox, goHome, lookAtBox\n\nSTEP 2\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: approach ball; look ball; hop pet; dig box; spin pet; bow pet; ball removed; approach box\nRecent completed ideas (avoid repeating): Gentle ripple: listen for the box's whis; Tiny whispers: if I nudge with the mat, ; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: approachBox. Continue the idea: Tiny fox dreams: whisper under the box’s. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtBox, rest, lookAtUser, goHome, stop\n\nSTEP 3\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: look ball; hop pet; dig box; spin pet; bow pet; ball removed; approach box; look box\nRecent completed ideas (avoid repeating): Tiny whispers: if I nudge with the mat, ; 规划校验; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: approachBox, lookAtBox. Continue the idea: Tiny fox dreams: whisper under the box’s. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtUser, rest, goHome, stop",
+        "promptTokens" : 407,
+        "rawOutput" : "STEP 1\n{\"doodle\": \"│ . . │\", \"emoji\": \"🐶✨🌀\", \"action\": \"approachBox\", \"thought\": \"Tiny fox dreams: whisper under the box’s quiet pulse 🦊✨\"}\n\nSTEP 2\n{\"action\": \"lookAtBox\"}\n\nSTEP 3\n{\"action\": \"rest\"}",
+        "schemaTokens" : 392
+      },
+      "scenario" : "continuous_no_ball",
+      "snapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, "
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "push ball",
+          "approach ball",
+          "look ball",
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "ball removed"
+        ],
+        "revision" : 2
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with "
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "bow pet",
+          "ball removed",
+          "approach box",
+          "look box",
+          "rest home",
+          "approach home",
+          "hop pet",
+          "dig box"
+        ],
+        "revision" : 2
+      },
+      "index" : 9,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 7.054341834,
+        "expressionAdjustedFields" : [
+          "thought"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1558,
+        "instructionTokens" : 774,
+        "outputTokens" : 93,
+        "plan" : {
+          "expression" : {
+            "doodle" : "= )=",
+            "emoji" : "🐾✨🌙",
+            "thought" : "I want to measure the box’s shadow with "
+          },
+          "intent" : "I want to measure the box’s shadow with ",
+          "steps" : [
+            {
+              "target" : "home",
+              "verb" : "approach"
+            },
+            {
+              "target" : "pet",
+              "verb" : "hop"
+            },
+            {
+              "target" : "box",
+              "verb" : "dig"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 10, box 35.\nRecent actual events: hop pet; dig box; spin pet; bow pet; ball removed; approach box; look box; rest home\nRecent completed ideas (avoid repeating): Gentle ripple: listen for the box's whis; Tiny whispers: if I nudge with the mat, ; Tiny fox dreams: whisper under the box’s\nInspiration for this activity: alternate curiosity with a cozy pause.\nStart a new 2-3 action idea.\nAvailable actions: goHome, hop, lookAtUser\n\nSTEP 2\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 10, box 35.\nRecent actual events: dig box; spin pet; bow pet; ball removed; approach box; look box; rest home; approach home\nRecent completed ideas (avoid repeating): Tiny whispers: if I nudge with the mat, ; Tiny fox dreams: whisper under the box’s; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: goHome. Continue the idea: I want to measure the box’s shadow with . The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: hop, lookAtUser, digInBox, stop\n\nSTEP 3\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 10, box 35.\nRecent actual events: spin pet; bow pet; ball removed; approach box; look box; rest home; approach home; hop pet\nRecent completed ideas (avoid repeating): Tiny fox dreams: whisper under the box’s; 规划校验; 规划校验\nInspiration for this activity: alternate curiosity with a cozy pause.\nAlready selected: goHome, hop. Continue the idea: I want to measure the box’s shadow with . The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: digInBox, spinAround, lookAtUser, stop",
+        "promptTokens" : 406,
+        "rawOutput" : "STEP 1\n{\"doodle\": \"= )=\", \"thought\": \"I want to measure the box’s shadow with the mat’s edge 🐶✨\", \"emoji\": \"🐾✨🌙\", \"action\": \"goHome\"}\n\nSTEP 2\n{\"action\": \"hop\"}\n\nSTEP 3\n{\"action\": \"digInBox\"}",
+        "schemaTokens" : 381
+      },
+      "scenario" : "continuous_no_ball",
+      "snapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "ball removed",
+          "approach box",
+          "look box",
+          "rest home"
+        ],
+        "revision" : 2
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "look box",
+          "rest home",
+          "approach home",
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "look box"
+        ],
+        "revision" : 2
+      },
+      "index" : 10,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 7.69382675,
+        "expressionAdjustedFields" : [
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1562,
+        "instructionTokens" : 774,
+        "outputTokens" : 97,
+        "plan" : {
+          "expression" : {
+            "doodle" : "***",
+            "emoji" : "🐶✨🌀",
+            "thought" : "我想用卡森盒做秘密标记，藏个瞬间路径🌀"
+          },
+          "intent" : "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "pet",
+              "verb" : "bow"
+            },
+            {
+              "target" : "box",
+              "verb" : "look"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: bow pet; ball removed; approach box; look box; rest home; approach home; hop pet; dig box\nRecent completed ideas (avoid repeating): Tiny whispers: if I nudge with the mat, ; Tiny fox dreams: whisper under the box’s; I want to measure the box’s shadow with \nInspiration for this activity: invent a tiny challenge.\nStart a new 2-3 action idea.\nAvailable actions: stretch, spinAround, lookAtUser\n\nSTEP 2\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: ball removed; approach box; look box; rest home; approach home; hop pet; dig box; spin pet\nRecent completed ideas (avoid repeating): Tiny fox dreams: whisper under the box’s; I want to measure the box’s shadow with ; 规划校验\nInspiration for this activity: invent a tiny challenge.\nAlready selected: spinAround. Continue the idea: 我想用卡森盒做秘密标记，藏个瞬间路径🌀. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtUser, stretch, approachBox, stop\n\nSTEP 3\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: approach box; look box; rest home; approach home; hop pet; dig box; spin pet; bow pet\nRecent completed ideas (avoid repeating): I want to measure the box’s shadow with ; 规划校验; 规划校验\nInspiration for this activity: invent a tiny challenge.\nAlready selected: spinAround, stretch. Continue the idea: 我想用卡森盒做秘密标记，藏个瞬间路径🌀. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: approachBox, lookAtUser, lookAtBox, stop",
+        "promptTokens" : 411,
+        "rawOutput" : "STEP 1\n{\"doodle\": \"╭*╭╯╭*╭╯╭*╭╯\", \"thought\": \"我想用卡森盒做秘密标记，藏个瞬间路径🌀\", \"emoji\": \"🐶✨🌀\", \"action\": \"spinAround\"}\n\nSTEP 2\n{\"action\": \"stretch\"}\n\nSTEP 3\n{\"action\": \"lookAtBox\"}",
+        "schemaTokens" : 380
+      },
+      "scenario" : "continuous_no_ball",
+      "snapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with "
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "bow pet",
+          "ball removed",
+          "approach box",
+          "look box",
+          "rest home",
+          "approach home",
+          "hop pet",
+          "dig box"
+        ],
+        "revision" : 2
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "look box",
+          "approach box",
+          "look pet",
+          "hop pet"
+        ],
+        "revision" : 2
+      },
+      "index" : 11,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 6.514693834,
+        "expressionAdjustedFields" : [
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1608,
+        "instructionTokens" : 774,
+        "outputTokens" : 103,
+        "plan" : {
+          "expression" : {
+            "doodle" : " _ _",
+            "emoji" : "🐾✨🌀",
+            "thought" : "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾"
+          },
+          "intent" : "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "approach"
+            },
+            {
+              "target" : "pet",
+              "verb" : "look"
+            },
+            {
+              "target" : "pet",
+              "verb" : "hop"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: look box; rest home; approach home; hop pet; dig box; spin pet; bow pet; look box\nRecent completed ideas (avoid repeating): Tiny fox dreams: whisper under the box’s; I want to measure the box’s shadow with ; 我想用卡森盒做秘密标记，藏个瞬间路径🌀\nInspiration for this activity: give a familiar place a new pretend purpose.\nStart a new 2-3 action idea.\nAvailable actions: approachBox, lookAtUser, rest\n\nSTEP 2\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: rest home; approach home; hop pet; dig box; spin pet; bow pet; look box; approach box\nRecent completed ideas (avoid repeating): I want to measure the box’s shadow with ; 我想用卡森盒做秘密标记，藏个瞬间路径🌀; 规划校验\nInspiration for this activity: give a familiar place a new pretend purpose.\nAlready selected: approachBox. Continue the idea: 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtUser, rest, goHome, stop\n\nSTEP 3\nBall: absent; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: approach home; hop pet; dig box; spin pet; bow pet; look box; approach box; look pet\nRecent completed ideas (avoid repeating): 我想用卡森盒做秘密标记，藏个瞬间路径🌀; 规划校验; 规划校验\nInspiration for this activity: give a familiar place a new pretend purpose.\nAlready selected: approachBox, lookAtUser. Continue the idea: 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: hop, goHome, rest, stop",
+        "promptTokens" : 461,
+        "rawOutput" : "STEP 1\n{\"emoji\": \"🐾✨🌀\", \"thought\": \"我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾\", \"action\": \"approachBox\", \"doodle\": \"□ _ _\"}\n\nSTEP 2\n{\"action\": \"lookAtUser\"}\n\nSTEP 3\n{\"action\": \"hop\"}",
+        "schemaTokens" : 376
+      },
+      "scenario" : "continuous_no_ball",
+      "snapshot" : {
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "look box",
+          "rest home",
+          "approach home",
+          "hop pet",
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "look box"
+        ],
+        "revision" : 2
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "look box",
+          "approach box",
+          "look pet",
+          "hop pet",
+          "ball appeared",
+          "push ball",
+          "spin pet",
+          "dig box"
+        ],
+        "revision" : 3
+      },
+      "index" : 12,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 6.6141190420000004,
+        "expressionAdjustedFields" : [
+          "thought",
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1664,
+        "instructionTokens" : 774,
+        "outputTokens" : 99,
+        "plan" : {
+          "expression" : {
+            "doodle" : "_  ^__^  _",
+            "emoji" : "🐶✨💬",
+            "thought" : "I want to try reading the box's whispers"
+          },
+          "intent" : "I want to try reading the box's whispers",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "push"
+            },
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "box",
+              "verb" : "dig"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: dig box; spin pet; bow pet; look box; approach box; look pet; hop pet; ball appeared\nRecent completed ideas (avoid repeating): I want to measure the box’s shadow with ; 我想用卡森盒做秘密标记，藏个瞬间路径🌀; 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾\nInspiration for this activity: celebrate a very small discovery.\nStart a new 2-3 action idea.\nAvailable actions: goHome, pushBall, lookAtBall, rest, digInBox, pickUpBall, approachBall\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 66, box 35.\nRecent actual events: spin pet; bow pet; look box; approach box; look pet; hop pet; ball appeared; push ball\nRecent completed ideas (avoid repeating): 我想用卡森盒做秘密标记，藏个瞬间路径🌀; 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾; 规划校验\nInspiration for this activity: celebrate a very small discovery.\nAlready selected: pushBall. Continue the idea: I want to try reading the box's whispers. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: approachBall, digInBox, goHome, lookAtBall, spinAround, pickUpBall, rest, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 66, box 35.\nRecent actual events: bow pet; look box; approach box; look pet; hop pet; ball appeared; push ball; spin pet\nRecent completed ideas (avoid repeating): 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾; 规划校验; 规划校验\nInspiration for this activity: celebrate a very small discovery.\nAlready selected: pushBall, spinAround. Continue the idea: I want to try reading the box's whispers. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pickUpBall, rest, stretch, lookAtBall, digInBox, approachBall, goHome, stop",
+        "promptTokens" : 462,
+        "rawOutput" : "STEP 1\n{\"thought\": \"I want to try reading the box's whispers through tiny bumps 🤫\", \"emoji\": \"🐶✨💬\", \"action\": \"pushBall\", \"doodle\": \"•_•  ^__^  •_•\"}\n\nSTEP 2\n{\"action\": \"spinAround\"}\n\nSTEP 3\n{\"action\": \"digInBox\"}",
+        "schemaTokens" : 431
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny whirlwind: let the ball escape thro",
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "dig box",
+          "spin pet",
+          "bow pet",
+          "look box",
+          "approach box",
+          "look pet",
+          "hop pet",
+          "ball appeared"
+        ],
+        "revision" : 3
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "Response may contain sensitive or unsafe content",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "look box",
+          "approach box",
+          "look pet",
+          "hop pet",
+          "ball appeared",
+          "push ball",
+          "spin pet",
+          "dig box"
+        ],
+        "revision" : 3
+      },
+      "index" : 13,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "look box",
+          "approach box",
+          "look pet",
+          "hop pet",
+          "ball appeared",
+          "push ball",
+          "spin pet",
+          "dig box"
+        ],
+        "revision" : 3
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers",
+          "我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "hop pet",
+          "ball appeared",
+          "push ball",
+          "spin pet",
+          "dig box",
+          "approach home",
+          "look ball",
+          "look box"
+        ],
+        "revision" : 3
+      },
+      "index" : 14,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 7.10191425,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1672,
+        "instructionTokens" : 774,
+        "outputTokens" : 104,
+        "plan" : {
+          "expression" : {
+            "doodle" : ".-_____\n   ^.^",
+            "emoji" : "🔍🐶",
+            "thought" : "我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾"
+          },
+          "intent" : "我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾",
+          "steps" : [
+            {
+              "target" : "home",
+              "verb" : "approach"
+            },
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "box",
+              "verb" : "look"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: look box; approach box; look pet; hop pet; ball appeared; push ball; spin pet; dig box\nRecent completed ideas (avoid repeating): 我想用卡森盒做秘密标记，藏个瞬间路径🌀; 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾; I want to try reading the box's whispers\nInspiration for this activity: make a tiny performance for the user.\nStart a new 2-3 action idea.\nAvailable actions: pickUpBall, goHome, lookAtBox, stretch, lookAtBall, rest, approachBall\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 10, box 35.\nRecent actual events: approach box; look pet; hop pet; ball appeared; push ball; spin pet; dig box; approach home\nRecent completed ideas (avoid repeating): 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾; I want to try reading the box's whispers; 规划校验\nInspiration for this activity: make a tiny performance for the user.\nAlready selected: goHome. Continue the idea: 我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pickUpBall, lookAtBall, lookAtBox, rest, approachBall, approachBox, stretch, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 10, box 35.\nRecent actual events: look pet; hop pet; ball appeared; push ball; spin pet; dig box; approach home; look ball\nRecent completed ideas (avoid repeating): I want to try reading the box's whispers; 规划校验; 规划校验\nInspiration for this activity: make a tiny performance for the user.\nAlready selected: goHome, lookAtBall. Continue the idea: 我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: lookAtUser, lookAtBox, approachBox, stretch, rest, pickUpBall, approachBall, stop",
+        "promptTokens" : 472,
+        "rawOutput" : "STEP 1\n{\"thought\": \"我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾\", \"doodle\": \".-_____\\n   ^.^\", \"emoji\": \"🔍🐶\", \"action\": \"goHome\"}\n\nSTEP 2\n{\"action\": \"lookAtBall\"}\n\nSTEP 3\n{\"action\": \"lookAtBox\"}",
+        "schemaTokens" : 429
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Bounce the ball like a dragon wants to s",
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "look box",
+          "approach box",
+          "look pet",
+          "hop pet",
+          "ball appeared",
+          "push ball",
+          "spin pet",
+          "dig box"
+        ],
+        "revision" : 3
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers",
+          "我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾",
+          "藏在角落的圆体想和我玩猜谜游戏🧩✨"
+        ],
+        "heldBall" : false,
+        "petX" : 0.35,
+        "recentEvents" : [
+          "spin pet",
+          "dig box",
+          "approach home",
+          "look ball",
+          "look box",
+          "approach ball",
+          "approach box",
+          "spin pet"
+        ],
+        "revision" : 3
+      },
+      "index" : 15,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 6.311833334,
+        "expressionAdjustedFields" : [
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1657,
+        "instructionTokens" : 774,
+        "outputTokens" : 93,
+        "plan" : {
+          "expression" : {
+            "doodle" : ".-_-.",
+            "emoji" : "🤔🐾",
+            "thought" : "藏在角落的圆体想和我玩猜谜游戏🧩✨"
+          },
+          "intent" : "藏在角落的圆体想和我玩猜谜游戏🧩✨",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            },
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 10, box 35.\nRecent actual events: hop pet; ball appeared; push ball; spin pet; dig box; approach home; look ball; look box\nRecent completed ideas (avoid repeating): 我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾; I want to try reading the box's whispers; 我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾\nInspiration for this activity: invent a tiny challenge.\nStart a new 2-3 action idea.\nAvailable actions: stretch, rest, approachBall, pickUpBall, hop, approachBox, lookAtUser\n\nSTEP 2\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 70, box 35.\nRecent actual events: ball appeared; push ball; spin pet; dig box; approach home; look ball; look box; approach ball\nRecent completed ideas (avoid repeating): I want to try reading the box's whispers; 我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾; 规划校验\nInspiration for this activity: invent a tiny challenge.\nAlready selected: approachBall. Continue the idea: 藏在角落的圆体想和我玩猜谜游戏🧩✨. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: pickUpBall, approachBox, hop, rest, pushBall, lookAtUser, stretch, stop\n\nSTEP 3\nBall: present; held: false.\nThe cardboard box and home mat exist. Positions: puppy 35, box 35.\nRecent actual events: push ball; spin pet; dig box; approach home; look ball; look box; approach ball; approach box\nRecent completed ideas (avoid repeating): 我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾; 规划校验; 规划校验\nInspiration for this activity: invent a tiny challenge.\nAlready selected: approachBall, approachBox. Continue the idea: 藏在角落的圆体想和我玩猜谜游戏🧩✨. The listed state simulates those selected actions; the real puppy has not done them yet.\nAvailable actions: spinAround, hop, pickUpBall, lookAtUser, pushBall, rest, stretch, stop",
+        "promptTokens" : 463,
+        "rawOutput" : "STEP 1\n{\"thought\": \"藏在角落的圆体想和我玩猜谜游戏🧩✨\", \"doodle\": \".-°_°-°.\", \"emoji\": \"🤔🐾\", \"action\": \"approachBall\"}\n\nSTEP 2\n{\"action\": \"approachBox\"}\n\nSTEP 3\n{\"action\": \"spinAround\"}",
+        "schemaTokens" : 423
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.35,
+        "completedActivities" : [
+          "Wrap the mat like a secret to outsmart t",
+          "Tiny storm whispers: crack the box’s sil",
+          "Tiny silk threads hum: weave box whisper",
+          "Tiny bamboo whispers: weave a secret pat",
+          "Gentle ripple: listen for the box's whis",
+          "Tiny whispers: if I nudge with the mat, ",
+          "Tiny fox dreams: whisper under the box’s",
+          "I want to measure the box’s shadow with ",
+          "我想用卡森盒做秘密标记，藏个瞬间路径🌀",
+          "我在想用这个箱子做个“悄悄计数”——箱子里藏一个小标志来记步履🌊🐾",
+          "I want to try reading the box's whispers",
+          "我想要让箱子的吱声变成密码——箱子藏着指向花园的秘密指令🗝️🐾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "hop pet",
+          "ball appeared",
+          "push ball",
+          "spin pet",
+          "dig box",
+          "approach home",
+          "look ball",
+          "look box"
+        ],
+        "revision" : 3
+      }
+    }
+  ]
+}

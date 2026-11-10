@@ -1,0 +1,140 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T14:04:49Z",
+  "trials" : [
+    {
+      "accepted" : false,
+      "error" : "UnsupportedGuide",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "UnsupportedGuide",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      },
+      "index" : 1,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "UnsupportedGuide",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "UnsupportedGuide",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      },
+      "index" : 3,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T14:07:37Z",
+  "trials" : [
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。"
+        ],
+        "heldBall" : false,
+        "petX" : 0.66,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 7.914772625,
+        "expressionAdjustedFields" : [
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 2050,
+        "instructionTokens" : 1080,
+        "outputTokens" : 103,
+        "plan" : {
+          "expression" : {
+            "doodle" : "(   \n  \n   ",
+            "emoji" : "🐾⚽",
+            "thought" : "想当侦探，用球侦查一下周围有没有新秘密。"
+          },
+          "intent" : "想当侦探，用球侦查一下周围有没有新秘密。",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            },
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "push"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗25，纸箱80。\n近期实际动作：\n近期已完成的想法（避免重复）：\n本次灵感：给现有道具换个好玩的角色；若相关道具不在场，请围绕现有道具另想玩法。\n请开始一个2至3步的小活动。thought只写简体中文，8至20字，和首个动作相符。\nAvailable actions: approachBox, stretch, pushBall, digInBox, lookAtBox, spinAround, lookAtUser, goHome, approachBall, pickUpBall, lookAtBall, hop, rest\n\nSTEP 2\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗55，纸箱80。\n近期实际动作：approach ball\n近期已完成的想法（避免重复）：\n本次灵感：给现有道具换个好玩的角色；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：approachBall。请延续这个想法：想当侦探，用球侦查一下周围有没有新秘密。。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: lookAtBall, rest, pushBall, approachBox, lookAtUser, digInBox, hop, stretch, goHome, pickUpBall, lookAtBox, spinAround, stop\n\nSTEP 3\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗55，纸箱80。\n近期实际动作：approach ball；look ball\n近期已完成的想法（避免重复）：\n本次灵感：给现有道具换个好玩的角色；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：approachBall、lookAtBall。请延续这个想法：想当侦探，用球侦查一下周围有没有新秘密。。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: lookAtUser, stretch, rest, pickUpBall, pushBall, hop, spinAround, digInBox, lookAtBox, approachBox, goHome, stop",
+        "promptTokens" : 362,
+        "rawOutput" : "STEP 1\n{\"action\": \"approachBall\", \"doodle\": \"( △ △ ▽\\n▽ △ △\\n▽ △ △ △\", \"thought\": \"想当侦探，用球侦查一下周围有没有新秘密。\", \"emoji\": \"🐾⚽\"}\n\nSTEP 2\n{\"action\": \"lookAtBall\"}\n\nSTEP 3\n{\"action\": \"pushBall\"}",
+        "schemaTokens" : 611
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "Response may contain sensitive or unsafe content",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。"
+        ],
+        "heldBall" : false,
+        "petX" : 0.66,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 1,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。"
+        ],
+        "heldBall" : false,
+        "petX" : 0.66,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。",
+          "顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball",
+          "spin pet",
+          "look box",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "elapsedSeconds" : 7.500052625,
+        "expressionAdjustedFields" : [
+          "doodle"
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 2099,
+        "instructionTokens" : 1080,
+        "outputTokens" : 117,
+        "plan" : {
+          "expression" : {
+            "doodle" : "(   ^   )\n \n ",
+            "emoji" : "🐕✨🌀",
+            "thought" : "顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！"
+          },
+          "intent" : "顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "box",
+              "verb" : "look"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗66，纸箱80。\n近期实际动作：approach ball；look ball；push ball\n近期已完成的想法（避免重复）：想当侦探，用球侦查一下周围有没有新秘密。\n本次灵感：用身体动作给自己鼓鼓劲；若相关道具不在场，请围绕现有道具另想玩法。\n请开始一个2至3步的小活动。thought只写简体中文，8至20字，和首个动作相符。\nAvailable actions: lookAtUser, pickUpBall, approachBox, hop, goHome, stretch, rest, digInBox, spinAround, lookAtBox\n\nSTEP 2\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗66，纸箱80。\n近期实际动作：approach ball；look ball；push ball；spin pet\n近期已完成的想法（避免重复）：想当侦探，用球侦查一下周围有没有新秘密。\n本次灵感：用身体动作给自己鼓鼓劲；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：spinAround。请延续这个想法：顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: digInBox, approachBox, goHome, lookAtBox, rest, pickUpBall, stretch, hop, lookAtUser, stop\n\nSTEP 3\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗66，纸箱80。\n近期实际动作：approach ball；look ball；push ball；spin pet；look box\n近期已完成的想法（避免重复）：想当侦探，用球侦查一下周围有没有新秘密。\n本次灵感：用身体动作给自己鼓鼓劲；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：spinAround、lookAtBox。请延续这个想法：顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: hop, rest, stretch, goHome, approachBox, pickUpBall, digInBox, lookAtUser, stop",
+        "promptTokens" : 450,
+        "rawOutput" : "STEP 1\n{\"doodle\": \"(   ^   )\\n 汪…………\\n 〇——————\", \"thought\": \"顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！\", \"emoji\": \"🐕✨🌀\", \"action\": \"spinAround\"}\n\nSTEP 2\n{\"action\": \"lookAtBox\"}\n\nSTEP 3\n{\"action\": \"approachBox\"}",
+        "schemaTokens" : 572
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。"
+        ],
+        "heldBall" : false,
+        "petX" : 0.66,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "Response may contain sensitive or unsafe content",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。",
+          "顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball",
+          "spin pet",
+          "look box",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 3,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "想当侦探，用球侦查一下周围有没有新秘密。",
+          "顺着圈圈，把纸箱当作追逐的对象，谁先转得更快，玩起来更有趣！"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach ball",
+          "look ball",
+          "push ball",
+          "spin pet",
+          "look box",
+          "approach box"
+        ],
+        "revision" : 0
+      }
+    }
+  ]
+}

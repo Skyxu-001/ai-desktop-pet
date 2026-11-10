@@ -1,0 +1,741 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T05:45:54Z",
+  "trials" : [
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.1,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送回家"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "look ball",
+          "carry ball",
+          "drop home"
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 3.2819967500000002,
+        "inputTokens" : 520,
+        "instructionTokens" : 293,
+        "outputTokens" : 39,
+        "plan" : {
+          "intent" : "把球送回家",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: false.\nRecent actual events: \nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 55,
+        "rawOutput" : "{\"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"], \"intent\": \"把球送回家\"}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "fresh",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(0)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      },
+      "index" : 1,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.078928167,
+        "inputTokens" : 526,
+        "instructionTokens" : 293,
+        "outputTokens" : 35,
+        "plan" : {
+          "intent" : "把球送回箱子",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            },
+            {
+              "target" : "ball",
+              "verb" : "push"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: absent; user took it away.\nHolding ball: false.\nRecent actual events: ball removed\nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 61,
+        "rawOutput" : "{\"intent\": \"把球送回箱子\", \"steps\": [\"lookAtBall\", \"approachBall\", \"pushBall\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "ball_removed",
+      "snapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(1)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.268642792,
+        "inputTokens" : 524,
+        "instructionTokens" : 293,
+        "outputTokens" : 39,
+        "plan" : {
+          "intent" : "把球送回家",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: true.\nRecent actual events: carry ball\nPreviously completed activities: 捡起球\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 59,
+        "rawOutput" : "{\"intent\": \"把球送回家\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "holding_ball",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.1,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子",
+          "把球放到家裡"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted",
+          "look ball",
+          "carry ball",
+          "drop home"
+        ],
+        "revision" : 1
+      },
+      "index" : 3,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.413943667,
+        "inputTokens" : 531,
+        "instructionTokens" : 293,
+        "outputTokens" : 39,
+        "plan" : {
+          "intent" : "把球放到家裡",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: false.\nRecent actual events: carry ball; drop box; petted\nPreviously completed activities: 把球送到箱子\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 66,
+        "rawOutput" : "{\"intent\": \"把球放到家裡\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "continuity",
+      "snapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.1,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送回家里"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "look ball",
+          "carry ball",
+          "drop home"
+        ],
+        "revision" : 0
+      },
+      "index" : 4,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.47281025,
+        "inputTokens" : 520,
+        "instructionTokens" : 293,
+        "outputTokens" : 39,
+        "plan" : {
+          "intent" : "把球送回家里",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: false.\nRecent actual events: \nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 55,
+        "rawOutput" : "{\"intent\": \"把球送回家里\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "fresh",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(0)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      },
+      "index" : 5,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.216393542,
+        "inputTokens" : 526,
+        "instructionTokens" : 293,
+        "outputTokens" : 27,
+        "plan" : {
+          "intent" : "把球送回箱子",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "home",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: absent; user took it away.\nHolding ball: false.\nRecent actual events: ball removed\nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 61,
+        "rawOutput" : "{\"intent\": \"把球送回箱子\", \"steps\": [\"lookAtBall\", \"goHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "ball_removed",
+      "snapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(1)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 6,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.371724125,
+        "inputTokens" : 524,
+        "instructionTokens" : 293,
+        "outputTokens" : 31,
+        "plan" : {
+          "intent" : "把球送回主位",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: true.\nRecent actual events: carry ball\nPreviously completed activities: 捡起球\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 59,
+        "rawOutput" : "{\"intent\": \"把球送回主位\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "holding_ball",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.1,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子",
+          "把球送回家"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted",
+          "look ball",
+          "carry ball",
+          "drop home"
+        ],
+        "revision" : 1
+      },
+      "index" : 7,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.344187625,
+        "inputTokens" : 531,
+        "instructionTokens" : 293,
+        "outputTokens" : 39,
+        "plan" : {
+          "intent" : "把球送回家",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: false.\nRecent actual events: carry ball; drop box; petted\nPreviously completed activities: 把球送到箱子\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 66,
+        "rawOutput" : "{\"intent\": \"把球送回家\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "continuity",
+      "snapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送回箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "look ball",
+          "carry ball",
+          "drop box"
+        ],
+        "revision" : 0
+      },
+      "index" : 8,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.076583667,
+        "inputTokens" : 520,
+        "instructionTokens" : 293,
+        "outputTokens" : 31,
+        "plan" : {
+          "intent" : "把球送回箱子",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "box",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: false.\nRecent actual events: \nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 55,
+        "rawOutput" : "{\"intent\": \"把球送回箱子\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallInBox\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "fresh",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送回箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed",
+          "look box"
+        ],
+        "revision" : 1
+      },
+      "index" : 9,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.020668875,
+        "inputTokens" : 526,
+        "instructionTokens" : 293,
+        "outputTokens" : 29,
+        "plan" : {
+          "intent" : "把球送回箱子",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "look"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: absent; user took it away.\nHolding ball: false.\nRecent actual events: ball removed\nPreviously completed activities: \nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 61,
+        "rawOutput" : "{\"intent\": \"把球送回箱子\", \"steps\": [\"lookAtBox\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "ball_removed",
+      "snapshot" : {
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+          "ball removed"
+        ],
+        "revision" : 1
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "invalidStep(1)",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 10,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.322396458,
+        "inputTokens" : 524,
+        "instructionTokens" : 293,
+        "outputTokens" : 39,
+        "plan" : {
+          "intent" : "把球送回家",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: true.\nRecent actual events: carry ball\nPreviously completed activities: 捡起球\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 59,
+        "rawOutput" : "{\"intent\": \"把球送回家\", \"steps\": [\"lookAtBall\", \"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "holding_ball",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "捡起球"
+        ],
+        "heldBall" : true,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "carry ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.1,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子",
+          "把球放到家裡"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted",
+          "carry ball",
+          "drop home"
+        ],
+        "revision" : 1
+      },
+      "index" : 11,
+      "result" : {
+        "contextSize" : 4096,
+        "elapsedSeconds" : 2.29346075,
+        "inputTokens" : 531,
+        "instructionTokens" : 293,
+        "outputTokens" : 29,
+        "plan" : {
+          "intent" : "把球放到家裡",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "carry"
+            },
+            {
+              "target" : "home",
+              "verb" : "drop"
+            }
+          ]
+        },
+        "prompt" : "A puppy is awake. A box and a resting mat (home) are available.\nBall: present.\nHolding ball: false.\nRecent actual events: carry ball; drop box; petted\nPreviously completed activities: 把球送到箱子\nChoose the puppy's next small activity using the current world.",
+        "promptTokens" : 66,
+        "rawOutput" : "{\"intent\": \"把球放到家裡\", \"steps\": [\"pickUpBall\", \"placeBallAtHome\"]}",
+        "schemaTokens" : 173
+      },
+      "scenario" : "continuity",
+      "snapshot" : {
+        "ballX" : 0.8,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球送到箱子"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "carry ball",
+          "drop box",
+          "petted"
+        ],
+        "revision" : 1
+      }
+    }
+  ]
+}

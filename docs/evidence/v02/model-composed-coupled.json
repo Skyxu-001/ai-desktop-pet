@@ -1,0 +1,242 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T14:13:20Z",
+  "trials" : [
+    {
+      "accepted" : false,
+      "error" : "Response may contain sensitive or unsafe content",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球推得滚得像个小风铃铛。"
+        ],
+        "heldBall" : false,
+        "petX" : 0.7000000000000001,
+        "recentEvents" : [
+          "push ball",
+          "approach ball",
+          "spin pet"
+        ],
+        "revision" : 0
+      },
+      "index" : 1,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "doodleSource" : "composed",
+        "elapsedSeconds" : 5.6451645,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1487,
+        "instructionTokens" : 513,
+        "outputTokens" : 101,
+        "plan" : {
+          "expression" : {
+            "doodle" : "\/ \\_\/ \\  . \n( o.o )  . \n \/   \\   . ",
+            "emoji" : "🐾",
+            "thought" : "把球推得滚得像个小风铃铛。"
+          },
+          "intent" : "把球推得滚得像个小风铃铛。",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "push"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            },
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗25，纸箱80。\n近期实际动作：\n近期已完成的想法（避免重复）：\n本次灵感：热闹之后安排一次休息；若相关道具不在场，请围绕现有道具另想玩法。\n请开始一个2至3步的小活动。thought只写简体中文，8至16字，和首个动作相符。\nAvailable actions: pushBall, lookAtBox, hop, approachBox, rest, goHome, approachBall, pickUpBall, lookAtBall, stretch, lookAtUser, digInBox, spinAround\n\nSTEP 2\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗66，纸箱80。\n近期实际动作：push ball\n近期已完成的想法（避免重复）：\n本次灵感：热闹之后安排一次休息；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：pushBall。请延续这个想法：把球推得滚得像个小风铃铛。。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: stretch, lookAtUser, lookAtBox, spinAround, approachBall, goHome, hop, pickUpBall, rest, digInBox, lookAtBall, approachBox, stop\n\nSTEP 3\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗70，纸箱80。\n近期实际动作：push ball；approach ball\n近期已完成的想法（避免重复）：\n本次灵感：热闹之后安排一次休息；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：pushBall、approachBall。请延续这个想法：把球推得滚得像个小风铃铛。。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: goHome, lookAtBox, approachBox, hop, digInBox, lookAtUser, rest, pickUpBall, lookAtBall, spinAround, stretch, stop",
+        "promptTokens" : 348,
+        "rawOutput" : "STEP 1\n{\"drawing\": \"puppy\", \"mood\": \"curious\", \"thought\": \"把球推得滚得像个小风铃铛。\", \"emoji\": \"🐾\", \"accent\": \"dots\", \"action\": \"pushBall\"}\n\nSTEP 2\n{\"action\": \"approachBall\"}\n\nSTEP 3\n{\"action\": \"spinAround\"}",
+        "schemaTokens" : 629
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球推得滚得像个小风铃铛。",
+          "把球当信号弹，我要发起小型侦察行动！"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "push ball",
+          "approach ball",
+          "spin pet",
+          "look ball",
+          "approach home",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "doodleSource" : "composed",
+        "elapsedSeconds" : 6.687916125,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 1524,
+        "instructionTokens" : 513,
+        "outputTokens" : 100,
+        "plan" : {
+          "expression" : {
+            "doodle" : "\/ \\_\/ \\  . \n( o.o )  . \n \/   \\   . ",
+            "emoji" : "👀",
+            "thought" : "把球当信号弹，我要发起小型侦察行动！"
+          },
+          "intent" : "把球当信号弹，我要发起小型侦察行动！",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "home",
+              "verb" : "approach"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "STEP 1\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗70，纸箱80。\n近期实际动作：push ball；approach ball；spin pet\n近期已完成的想法（避免重复）：把球推得滚得像个小风铃铛。\n本次灵感：把几个动作连成小表演；若相关道具不在场，请围绕现有道具另想玩法。\n请开始一个2至3步的小活动。thought只写简体中文，8至16字，和首个动作相符。\nAvailable actions: approachBox, lookAtUser, lookAtBox, rest, digInBox, pickUpBall, hop, stretch, lookAtBall, goHome\n\nSTEP 2\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗70，纸箱80。\n近期实际动作：push ball；approach ball；spin pet；look ball\n近期已完成的想法（避免重复）：把球推得滚得像个小风铃铛。\n本次灵感：把几个动作连成小表演；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：lookAtBall。请延续这个想法：把球当信号弹，我要发起小型侦察行动！。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: rest, stretch, lookAtUser, goHome, approachBox, lookAtBox, hop, digInBox, pickUpBall, stop\n\nSTEP 3\n球：在场；嘴里叼着球：否。\n纸箱和小毯子一直在场。位置百分比：小狗10，纸箱80。\n近期实际动作：push ball；approach ball；spin pet；look ball；approach home\n近期已完成的想法（避免重复）：把球推得滚得像个小风铃铛。\n本次灵感：把几个动作连成小表演；若相关道具不在场，请围绕现有道具另想玩法。\n已选动作：lookAtBall、goHome。请延续这个想法：把球当信号弹，我要发起小型侦察行动！。上面是模拟这些动作后的状态，真实小狗尚未执行。\nAvailable actions: approachBox, lookAtBox, digInBox, rest, pickUpBall, lookAtUser, hop, stretch, stop",
+        "promptTokens" : 423,
+        "rawOutput" : "STEP 1\n{\"thought\": \"把球当信号弹，我要发起小型侦察行动！\", \"drawing\": \"puppy\", \"action\": \"lookAtBall\", \"accent\": \"dots\", \"emoji\": \"👀\", \"mood\": \"curious\"}\n\nSTEP 2\n{\"action\": \"goHome\"}\n\nSTEP 3\n{\"action\": \"approachBox\"}",
+        "schemaTokens" : 591
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球推得滚得像个小风铃铛。"
+        ],
+        "heldBall" : false,
+        "petX" : 0.7000000000000001,
+        "recentEvents" : [
+          "push ball",
+          "approach ball",
+          "spin pet"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : false,
+      "error" : "Response may contain sensitive or unsafe content",
+      "executed" : false,
+      "finalSnapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球推得滚得像个小风铃铛。",
+          "把球当信号弹，我要发起小型侦察行动！"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "push ball",
+          "approach ball",
+          "spin pet",
+          "look ball",
+          "approach home",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 3,
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.7000000000000001,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "把球推得滚得像个小风铃铛。",
+          "把球当信号弹，我要发起小型侦察行动！"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "push ball",
+          "approach ball",
+          "spin pet",
+          "look ball",
+          "approach home",
+          "approach box"
+        ],
+        "revision" : 0
+      }
+    }
+  ]
+}

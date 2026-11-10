@@ -1,0 +1,318 @@
+{
+  "availability" : "available",
+  "contextSize" : 4096,
+  "model" : "SystemLanguageModel.default",
+  "timestamp" : "2026-09-17T14:19:41Z",
+  "trials" : [
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach home",
+          "approach box"
+        ],
+        "revision" : 0
+      },
+      "index" : 0,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "doodleSource" : "composed",
+        "elapsedSeconds" : 5.4238185,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 878,
+        "instructionTokens" : 305,
+        "outputTokens" : 85,
+        "plan" : {
+          "expression" : {
+            "doodle" : " .---.   _ \n( o.o ) <3 \n '---'     ",
+            "emoji" : "🐶",
+            "thought" : "先躺在毯子里，接着探箱子，真有趣！🐶"
+          },
+          "intent" : "先躺在毯子里，接着探箱子，真有趣！🐶",
+          "steps" : [
+            {
+              "target" : "home",
+              "verb" : "approach"
+            },
+            {
+              "target" : "box",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "ACTION 1\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: \nSelected actions simulated in this state: .\nChoose an interesting first action and a picture composition.\nChoices: pushBall, hop, goHome, digInBox, stretch, spinAround, lookAtBox, rest, pickUpBall, lookAtBall, approachBall, lookAtUser, approachBox\nDrawing choices: [\"box\", \"puppy\", \"ball\"]; accents: [\"dots\", \"heart\"]; moods: [\"happy\", \"curious\", \"sleepy\"]\n\nACTION 2\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: \nSelected actions simulated in this state: goHome.\nChoose a related second action, or stop if the activity is complete.\nChoices: spinAround, approachBox, pickUpBall, rest, approachBall, pushBall, lookAtBox, lookAtBall, hop, lookAtUser, digInBox, stretch, stop\nDrawing choices: []; accents: []; moods: []\n\nEXPRESSION\n小狗接下来计划按顺序做：想回小毯子歇一会，然后打算去纸箱边探险。\n球目前在场。这里只需要描述这些动作，用8至16字简体中文说一句俏皮的打算，再给一个emoji。",
+        "promptTokens" : 159,
+        "rawOutput" : "ACTION 1\n{\"accent\": \"heart\", \"action\": \"goHome\", \"drawing\": \"ball\", \"mood\": \"curious\"}\n\nACTION 2\n{\"action\": \"approachBox\"}\n\nEXPRESSION\n{\"thought\": \"先躺在毯子里，接着探箱子，真有趣！🐶\", \"emoji\": \"🐶\"}",
+        "schemaTokens" : 417
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+
+        ],
+        "heldBall" : false,
+        "petX" : 0.25,
+        "recentEvents" : [
+
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶",
+          "想仔细看球，然后绕球转转哦～🎾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "approach home",
+          "approach box",
+          "look ball",
+          "approach ball"
+        ],
+        "revision" : 0
+      },
+      "index" : 1,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "doodleSource" : "composed",
+        "elapsedSeconds" : 4.021637625,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 867,
+        "instructionTokens" : 305,
+        "outputTokens" : 87,
+        "plan" : {
+          "expression" : {
+            "doodle" : "\/ \\_\/ \\  . \n( o.o ) -*-\n \/   \\   ' ",
+            "emoji" : "🎾",
+            "thought" : "想仔细看球，然后绕球转转哦～🎾"
+          },
+          "intent" : "想仔细看球，然后绕球转转哦～🎾",
+          "steps" : [
+            {
+              "target" : "ball",
+              "verb" : "look"
+            },
+            {
+              "target" : "ball",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "ACTION 1\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: approach home; approach box\nSelected actions simulated in this state: .\nChoose an interesting first action and a picture composition.\nChoices: lookAtBall, hop, rest, lookAtBox, digInBox, lookAtUser, pushBall, pickUpBall, approachBall, spinAround, stretch\nDrawing choices: [\"trail\", \"puppy\", \"box\"]; accents: [\"sparkle\", \"heart\"]; moods: [\"happy\", \"curious\", \"sleepy\"]\n\nACTION 2\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: approach home; approach box\nSelected actions simulated in this state: lookAtBall.\nChoose a related second action, or stop if the activity is complete.\nChoices: rest, pickUpBall, stretch, hop, spinAround, approachBall, digInBox, lookAtUser, pushBall, lookAtBox, stop\nDrawing choices: []; accents: []; moods: []\n\nEXPRESSION\n小狗接下来计划按顺序做：想仔细观察一下球，然后想去球旁边转转。\n球目前在场。这里只需要描述这些动作，用8至16字简体中文说一句俏皮的打算，再给一个emoji。",
+        "promptTokens" : 164,
+        "rawOutput" : "ACTION 1\n{\"mood\": \"curious\", \"action\": \"lookAtBall\", \"drawing\": \"puppy\", \"accent\": \"sparkle\"}\n\nACTION 2\n{\"action\": \"approachBall\"}\n\nEXPRESSION\n{\"thought\": \"想仔细看球，然后绕球转转哦～🎾\", \"emoji\": \"🎾\"}",
+        "schemaTokens" : 401
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach home",
+          "approach box"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶",
+          "想仔细看球，然后绕球转转哦～🎾",
+          "想观察纸箱的秘密，然后准备刨个坑！🐾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach home",
+          "approach box",
+          "look ball",
+          "approach ball",
+          "look box",
+          "dig box"
+        ],
+        "revision" : 0
+      },
+      "index" : 2,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "doodleSource" : "composed",
+        "elapsedSeconds" : 4.007162458,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+          "emoji"
+        ],
+        "inputTokens" : 864,
+        "instructionTokens" : 305,
+        "outputTokens" : 87,
+        "plan" : {
+          "expression" : {
+            "doodle" : " .---.   . \n| o.o |  . \n '---'   . ",
+            "emoji" : "🐾",
+            "thought" : "想观察纸箱的秘密，然后准备刨个坑！🐾"
+          },
+          "intent" : "想观察纸箱的秘密，然后准备刨个坑！🐾",
+          "steps" : [
+            {
+              "target" : "box",
+              "verb" : "look"
+            },
+            {
+              "target" : "box",
+              "verb" : "dig"
+            }
+          ]
+        },
+        "prompt" : "ACTION 1\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: approach home; approach box; look ball; approach ball\nSelected actions simulated in this state: .\nChoose an interesting first action and a picture composition.\nChoices: lookAtUser, hop, lookAtBox, pickUpBall, pushBall, stretch, spinAround, rest, digInBox\nDrawing choices: [\"trail\", \"puppy\", \"box\"]; accents: [\"sparkle\", \"dots\"]; moods: [\"curious\", \"happy\", \"sleepy\"]\n\nACTION 2\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: approach home; approach box; look ball; approach ball\nSelected actions simulated in this state: lookAtBox.\nChoose a related second action, or stop if the activity is complete.\nChoices: hop, pickUpBall, stretch, lookAtUser, rest, pushBall, digInBox, spinAround, stop\nDrawing choices: []; accents: []; moods: []\n\nEXPRESSION\n小狗接下来计划按顺序做：想观察纸箱的秘密，然后准备在纸箱边刨一刨。\n球目前在场。这里只需要描述这些动作，用8至16字简体中文说一句俏皮的打算，再给一个emoji。",
+        "promptTokens" : 179,
+        "rawOutput" : "ACTION 1\n{\"accent\": \"dots\", \"action\": \"lookAtBox\", \"drawing\": \"box\", \"mood\": \"curious\"}\n\nACTION 2\n{\"action\": \"digInBox\"}\n\nEXPRESSION\n{\"thought\": \"想观察纸箱的秘密，然后准备刨个坑！🐾\", \"emoji\": \"汪\"}",
+        "schemaTokens" : 383
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶",
+          "想仔细看球，然后绕球转转哦～🎾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.55,
+        "recentEvents" : [
+          "approach home",
+          "approach box",
+          "look ball",
+          "approach ball"
+        ],
+        "revision" : 0
+      }
+    },
+    {
+      "accepted" : true,
+      "executed" : true,
+      "finalSnapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶",
+          "想仔细看球，然后绕球转转哦～🎾",
+          "想观察纸箱的秘密，然后准备刨个坑！🐾",
+          "先转圈庆祝，再躺在毯子上🎉"
+        ],
+        "heldBall" : false,
+        "petX" : 0.1,
+        "recentEvents" : [
+          "approach home",
+          "approach box",
+          "look ball",
+          "approach ball",
+          "look box",
+          "dig box",
+          "spin pet",
+          "approach home"
+        ],
+        "revision" : 0
+      },
+      "index" : 3,
+      "result" : {
+        "contextSize" : 4096,
+        "decisionCount" : 3,
+        "doodleSource" : "composed",
+        "elapsedSeconds" : 4.018360208,
+        "expressionAdjustedFields" : [
+
+        ],
+        "expressionFallbackFields" : [
+
+        ],
+        "inputTokens" : 860,
+        "instructionTokens" : 305,
+        "outputTokens" : 87,
+        "plan" : {
+          "expression" : {
+            "doodle" : " .---.   . \n( o.o )  . \n '---'   . ",
+            "emoji" : "🎉",
+            "thought" : "先转圈庆祝，再躺在毯子上🎉"
+          },
+          "intent" : "先转圈庆祝，再躺在毯子上🎉",
+          "steps" : [
+            {
+              "target" : "pet",
+              "verb" : "spin"
+            },
+            {
+              "target" : "home",
+              "verb" : "approach"
+            }
+          ]
+        },
+        "prompt" : "ACTION 1\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: approach home; approach box; look ball; approach ball; look box; dig box\nSelected actions simulated in this state: .\nChoose an interesting first action and a picture composition.\nChoices: hop, spinAround, lookAtUser, pickUpBall, stretch, rest, pushBall\nDrawing choices: [\"trail\", \"puppy\", \"ball\"]; accents: [\"heart\", \"dots\"]; moods: [\"happy\", \"sleepy\", \"curious\"]\n\nACTION 2\nBall: present; held: false.\nThe puppy, cardboard box and home mat are present.\nRecent actual actions: approach home; approach box; look ball; approach ball; look box; dig box\nSelected actions simulated in this state: spinAround.\nChoose a related second action, or stop if the activity is complete.\nChoices: goHome, pickUpBall, lookAtUser, rest, pushBall, hop, stretch, stop\nDrawing choices: []; accents: []; moods: []\n\nEXPRESSION\n小狗接下来计划按顺序做：想转个小圈庆祝一下，然后想回小毯子歇一会。\n球目前在场。这里只需要描述这些动作，用8至16字简体中文说一句俏皮的打算，再给一个emoji。",
+        "promptTokens" : 191,
+        "rawOutput" : "ACTION 1\n{\"mood\": \"curious\", \"action\": \"spinAround\", \"drawing\": \"ball\", \"accent\": \"dots\"}\n\nACTION 2\n{\"action\": \"goHome\"}\n\nEXPRESSION\n{\"thought\": \"先转圈庆祝，再躺在毯子上🎉\", \"emoji\": \"🎉\"}",
+        "schemaTokens" : 367
+      },
+      "scenario" : "continuous_play",
+      "snapshot" : {
+        "ballX" : 0.55,
+        "boxX" : 0.8,
+        "completedActivities" : [
+          "先躺在毯子里，接着探箱子，真有趣！🐶",
+          "想仔细看球，然后绕球转转哦～🎾",
+          "想观察纸箱的秘密，然后准备刨个坑！🐾"
+        ],
+        "heldBall" : false,
+        "petX" : 0.8,
+        "recentEvents" : [
+          "approach home",
+          "approach box",
+          "look ball",
+          "approach ball",
+          "look box",
+          "dig box"
+        ],
+        "revision" : 0
+      }
+    }
+  ]
+}
