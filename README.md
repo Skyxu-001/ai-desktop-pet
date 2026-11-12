@@ -142,3 +142,7 @@ swift run PetProbe --continuous --count 16 --output temp/continuous.json
 ## License
 
 [MIT](LICENSE)
+
+---
+
+If you find this project useful or interesting, a ⭐ helps others discover it. Thanks!
